@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    user-select: none;
+    font-family: Tahoma, Arial, sans-serif;
+}
+*:focus{
+    outline: none;
+}
+body{
+    background: linear-gradient(-45deg, rgba(180, 0, 0, .5), rgba(90, 90, 45, .5), rgba(0, 180, 0, .5));
+}
+.App{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    background-color: transparent;
+    border: .5px solid rgba(64, 64, 64, .2);
+    padding: .75rem 0;
+    box-shadow: inset 3px 3px 7px rgba(240, 240, 240, .3), inset -1px -1px 9px rgba(16, 16, 16, .2);
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgba(180, 0, 0, .1);
+    color: #d2d2d2;
+}
+
+.calculatorWrapperAll{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator{
+    width: 30%;
+    box-shadow: 7px 7px 7px rgba(16, 16, 16, .5), -5px -5px 15px rgba(16, 16, 16, .1);
+    border: 1px solid rgba(240, 240, 240, .2);
+}
+.display{
+    background-color: #c0c0c0;
+    padding: 2rem;
+    text-align: right;
+    box-shadow: inset 5px 5px 5px rgba(240, 240, 240, .5), inset -3px -3px 7px rgba(16, 16, 16, .2);
+}
+.resultScreen{
+    text-shadow: 0 0 8px rgba(20, 20, 20, .5);
+    user-select: all;
+}
+
+.buttons{
+    background-color: #acacac;
+    padding: 20px;
+    box-shadow: inset 5px 5px 5px rgba(240, 240, 240, .5), inset -3px -3px 7px rgba(16, 16, 16, .2);
+}
+.buttonsWrapper{
+    display: grid;
+    grid-column-gap: .75rem;
+    grid-row-gap: .5rem;
+    grid-template-areas:
+    "seven eight nine   divide"
+    "four  five  six    multiply"
+    "one   two   three  minus"
+    "clear zero  equals plus";
+}
+.zero{
+    grid-area: zero;
+}
+.one{
+    grid-area: one;
+}
+.two{
+    grid-area: two;
+}
+.three{
+    grid-area: three;
+}
+.four{
+    grid-area: four;
+}
+.five{
+    grid-area: five;
+}
+.six{
+    grid-area: six;
+}
+.seven{
+    grid-area: seven;
+}
+.eight{
+    grid-area: eight;
+}
+.nine{
+    grid-area: nine;
+}
+.plus{
+    grid-area: plus;
+}
+.minus{
+    grid-area: minus;
+}
+.multiply{
+    grid-area: multiply;
+}
+.divide{
+    grid-area: divide;
+}
+.clear{
+    grid-area: clear;
+}
+.equals{
+    grid-area: equals;
+}
